@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking - MakeMyTrip Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/trip.jpg" alt="MakeMyTrip Logo">
+            <span class="logo-text">TripEase</span>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn"><i class="bi bi-person-circle"></i> Login or Create Account</a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="vertical-nav">
+                <ul>
+                    <li>
+                        <a href="flights.html">
+                            <div class="nav-icon"><i class="bi bi-airplane"></i></div>
+                            <span class="nav-text">Flights</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">
+                            <div class="nav-icon"><i class="bi bi-house"></i></div>
+                            <span class="nav-text">Hotels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="holidays.html">
+                            <div class="nav-icon"><i class="bi bi-backpack3"></i></div>
+                            <span class="nav-text">Holidays</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="trains.html">
+                            <div class="nav-icon"><i class="bi bi-train-front"></i></div>
+                            <span class="nav-text">Trains</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buses.html">
+                            <div class="nav-icon"><i class="bi bi-bus-front"></i></div>
+                            <span class="nav-text">Buses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cabs.html">
+                            <div class="nav-icon"><i class="bi bi-taxi-front"></i></div>
+                            <span class="nav-text">Cabs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Book Train Tickets</h1>
+                    <p class="subtitle">Book IRCTC train tickets for your journey across India</p>
+                </div>
+                
+                <div class="search-card">
+                    <div class="train-search">
+                        <div class="field">
+                            <h3><i class="bi bi-geo-alt"></i> FROM</h3>
+                            <p class="city-name">New Delhi</p>
+                            <p class="airport-label">NDLS, New Delhi Railway Station</p>
+                        </div>
+                        
+                        <div class="switch-icon">
+                            <span><i class="bi bi-arrow-left-right"></i></span>
+                        </div>
+                        
+                        <div class="field">
+                            <h3><i class="bi bi-geo-alt-fill"></i> TO</h3>
+                            <p class="city-name">Mumbai</p>
+                            <p class="airport-label">CSTM, Chhatrapati Shivaji Terminus</p>
+                        </div>
+                        
+                        <div class="field">
+                            <h3><i class="bi bi-calendar3"></i> TRAVEL DATE</h3>
+                            <p class="date-value">18 Jun'25</p>
+                            <p class="day-label">Wednesday</p>
+                        </div>
+                        
+                        <div class="field">
+                            <h3><i class="bi bi-person"></i> CLASS</h3>
+                            <p class="traveller-count">All Classes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="search-button">
+                        <button class="search-btn">SEARCH TRAINS</button>
+                    </div>
+                </div>
+                
+                <div class="popular-trains">
+                    <h3>Popular Train Routes</h3>
+                    <div class="train-routes">
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Delhi → Mumbai</span>
+                                <span class="train-name">Rajdhani Express</span>
+                            </div>
+                            <span class="route-price">₹1,500</span>
+                        </div>
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Delhi → Kolkata</span>
+                                <span class="train-name">Duronto Express</span>
+                            </div>
+                            <span class="route-price">₹1,800</span>
+                        </div>
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Mumbai → Goa</span>
+                                <span class="train-name">Jan Shatabdi Express</span>
+                            </div>
+                            <span class="route-price">₹900</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="train-features">
+                <h2>Why Book Train Tickets with Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-lightning-charge"></i></div>
+                        <h3>Instant Booking</h3>
+                        <p>Book train tickets instantly without any hassle</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-wallet2"></i></div>
+                        <h3>Zero Payment Fees</h3>
+                        <p>No additional charges on any payment method</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-bell"></i></div>
+                        <h3>PNR Status Alerts</h3>
+                        <p>Get timely updates about your PNR status</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Install App</h4>
+                <div class="app-buttons">
+                    <a href="#" class="app-button">
+                        <i class="bi bi-apple"></i> App Store
+                    </a>
+                    <a href="#" class="app-button">
+                        <i class="bi bi-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MakeMyTrip Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

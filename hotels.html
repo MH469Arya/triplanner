@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels, Stays & Villa - MakeMyTrip Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/trip.jpg" alt="MakeMyTrip Logo">
+            <span class="logo-text">TripEase</span>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn"><i class="bi bi-person-circle"></i> Login or Create Account</a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="vertical-nav">
+                <ul>
+                    <li>
+                        <a href="flights.html">
+                            <div class="nav-icon"><i class="bi bi-airplane"></i></div>
+                            <span class="nav-text">Flights</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="hotels.html">
+                            <div class="nav-icon"><i class="bi bi-house"></i></div>
+                            <span class="nav-text">Hotels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="holidays.html">
+                            <div class="nav-icon"><i class="bi bi-backpack3"></i></div>
+                            <span class="nav-text">Holidays</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="trains.html">
+                            <div class="nav-icon"><i class="bi bi-train-front"></i></div>
+                            <span class="nav-text">Trains</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buses.html">
+                            <div class="nav-icon"><i class="bi bi-bus-front"></i></div>
+                            <span class="nav-text">Buses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cabs.html">
+                            <div class="nav-icon"><i class="bi bi-taxi-front"></i></div>
+                            <span class="nav-text">Cabs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <section class="hero-section">
+                <div class="search-forms">
+                    <div class="search-form active" id="hotel-search">
+                        <h2>Book Hotels, Stays & Villa</h2>
+                        
+                        <!-- Hotel search form content would go here -->
+                        <div class="section">
+                            <div class="field">
+                                <div class="title">CITY, PROPERTY NAME OR LOCATION</div>
+                                <div class="city-name">Goa</div>
+                                <div class="airport-label">India</div>
+                            </div>
+                            
+                            <div class="field">
+                                <div class="title">CHECK-IN</div>
+                                <div class="date-value">20 Jun '25</div>
+                                <div class="airport-label">Thursday</div>
+                            </div>
+                            
+                            <div class="field">
+                                <div class="title">CHECK-OUT</div>
+                                <div class="date-value">22 Jun '25</div>
+                                <div class="airport-label">Saturday</div>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="field">
+                                <div class="title">ROOMS & GUESTS</div>
+                                <div class="traveller-count">1 Room, 2 Adults</div>
+                                <div class="airport-label">0 Children</div>
+                            </div>
+                            
+                            <div class="field">
+                                <div class="title">PRICE PER NIGHT</div>
+                                <div class="traveller-count">₹0 - ₹15,000+</div>
+                            </div>
+                        </div>
+                        
+                        <button class="search-btn">SEARCH HOTELS</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

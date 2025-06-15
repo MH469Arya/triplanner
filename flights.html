@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking - MakeMyTrip Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/trip.jpg" alt="MakeMyTrip Logo">
+            <span class="logo-text">TripEase</span>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn"><i class="bi bi-person-circle"></i> Login or Create Account</a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="vertical-nav">
+                <ul>
+                    <li class="active">
+                        <a href="flights.html">
+                            <div class="nav-icon"><i class="bi bi-airplane"></i></div>
+                            <span class="nav-text">Flights</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">
+                            <div class="nav-icon"><i class="bi bi-house"></i></div>
+                            <span class="nav-text">Hotels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="holidays.html">
+                            <div class="nav-icon"><i class="bi bi-backpack3"></i></div>
+                            <span class="nav-text">Holidays</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="trains.html">
+                            <div class="nav-icon"><i class="bi bi-train-front"></i></div>
+                            <span class="nav-text">Trains</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buses.html">
+                            <div class="nav-icon"><i class="bi bi-bus-front"></i></div>
+                            <span class="nav-text">Buses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cabs.html">
+                            <div class="nav-icon"><i class="bi bi-taxi-front"></i></div>
+                            <span class="nav-text">Cabs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Book Domestic and International Flights</h1>
+                    <p class="subtitle">Find the best deals on flights to your favorite destinations</p>
+                </div>
+                
+                <div class="search-card">
+                    <div class="trip-selector">
+                        <div class="trip-types">
+                            <label class="trip-option">
+                                <input type="radio" name="trip-type" value="One Way" checked />
+                                <span class="trip-label"><i class="bi bi-arrow-right"></i> One Way</span>
+                            </label>
+                            <label class="trip-option">
+                                <input type="radio" name="trip-type" value="Round Trip" />
+                                <span class="trip-label"><i class="bi bi-arrow-left-right"></i> Round Trip</span>
+                            </label>
+                            <label class="trip-option">
+                                <input type="radio" name="trip-type" value="Multi City" />
+                                <span class="trip-label"><i class="bi bi-distribute-vertical"></i> Multi City</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="location-selector">
+                        <div class="field from-field">
+                            <h3><i class="bi bi-geo-alt"></i> FROM</h3>
+                            <p class="city-name">Delhi</p>
+                            <p class="airport-label">DEL, Delhi Airport India</p>
+                        </div>
+                        
+                        <div class="switch-icon">
+                            <span><i class="bi bi-arrow-left-right"></i></span>
+                        </div>
+                        
+                        <div class="field to-field">
+                            <h3><i class="bi bi-geo-alt-fill"></i> TO</h3>
+                            <p class="city-name">Mumbai</p>
+                            <p class="airport-label">BOM, Chhatrapati Shivaji International</p>
+                        </div>
+                    </div>
+                    
+                    <div class="date-traveller-selector">
+                        <div class="field date-field">
+                            <h3><i class="bi bi-calendar3"></i> DEPARTURE</h3>
+                            <p class="date-value">16 Jun'25</p>
+                            <p class="day-label">Monday</p>
+                        </div>
+                        
+                        <div class="field return-date">
+                            <h3><i class="bi bi-calendar3-week"></i> RETURN</h3>
+                            <p class="info">Tap to add a return date for bigger discounts</p>
+                        </div>
+                        
+                        <div class="field traveller-field">
+                            <h3><i class="bi bi-person"></i> TRAVELLERS & CLASS</h3>
+                            <p class="traveller-count">1 Traveller</p>
+                            <p class="class-label">Economy/Premium Economy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="special-fare-section">
+                        <h4>Select a special fare <span class="extra-savings">EXTRA SAVINGS</span></h4>
+                        <div class="fare-options">
+                            <label class="fare-option selected">
+                                <input type="radio" name="fare-type" checked /> 
+                                <div class="fare-content">
+                                    <span class="fare-title">Regular</span>
+                                </div>
+                            </label>
+                            <label class="fare-option">
+                                <input type="radio" name="fare-type" /> 
+                                <div class="fare-content">
+                                    <span class="fare-title">Student</span>
+                                    <span class="fare-desc">Extra discounts/baggage</span>
+                                </div>
+                            </label>
+                            <label class="fare-option">
+                                <input type="radio" name="fare-type" /> 
+                                <div class="fare-content">
+                                    <span class="fare-title">Senior Citizen</span>
+                                    <span class="fare-desc">Up to ₹600 off</span>
+                                </div>
+                            </label>
+                            <label class="fare-option">
+                                <input type="radio" name="fare-type" /> 
+                                <div class="fare-content">
+                                    <span class="fare-title">Armed Forces</span>
+                                    <span class="fare-desc">Up to ₹600 off</span>
+                                </div>
+                            </label>
+                            <label class="fare-option">
+                                <input type="radio" name="fare-type" /> 
+                                <div class="fare-content">
+                                    <span class="fare-title">Doctor and Nurses</span>
+                                    <span class="fare-desc">Up to ₹600 off</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="search-button">
+                        <button class="search-btn">SEARCH FLIGHTS</button>
+                    </div>
+                </div>
+                
+                <div class="popular-flights">
+                    <h3>Popular Flight Routes</h3>
+                    <div class="flight-routes">
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Delhi → Mumbai</span>
+                                <span class="route-price">₹3,500</span>
+                            </div>
+                            <span class="route-date">Jun 20</span>
+                        </div>
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Bangalore → Delhi</span>
+                                <span class="route-price">₹4,200</span>
+                            </div>
+                            <span class="route-date">Jun 22</span>
+                        </div>
+                        <div class="route-card">
+                            <div class="route-info">
+                                <span class="route-cities">Mumbai → Goa</span>
+                                <span class="route-price">₹2,800</span>
+                            </div>
+                            <span class="route-date">Jun 25</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features-section">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                    <h3>Secure Payments</h3>
+                    <p>All your payment information is encrypted and secure</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-currency-exchange"></i></div>
+                    <h3>Easy Refunds</h3>
+                    <p>Cancel your flight and get refund with minimal charges</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support is available round the clock</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Install App</h4>
+                <div class="app-buttons">
+                    <a href="#" class="app-button">
+                        <i class="bi bi-apple"></i> App Store
+                    </a>
+                    <a href="#" class="app-button">
+                        <i class="bi bi-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MakeMyTrip Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
